@@ -5,12 +5,6 @@ import funcoes  # Importa nosso arquivo de funções
 
 
 def menu_principal():
-    """
-    Função principal que roda o menu.
-    Usa um LOOP (while True) para continuar rodando até o usuário sair.
-    """
-
-    # Bloco try-except para evitar que o programa quebre
     # se o usuário digitar texto onde deveria ser um número.
     try:
         while True:
@@ -34,7 +28,7 @@ def menu_principal():
                     input("Digite o NOME do traço (ex: concreto_c25): ").strip().lower()
                 )
                 volume_desejado = float(
-                    input("Digite o volume total em m³ (ex: 2.5): ")
+                    input("Digite o volume total em m³ (ex: 2.2): ")
                 )
 
                 # --- Passo 1: Calcular totais em kg/m³ ---
@@ -90,7 +84,7 @@ def menu_principal():
 
     except ValueError:
         print("\nErro! Você digitou um valor não numérico para o volume.")
-        print("Reiniciando o programa...")
+        print("Reiniciando...")
         menu_principal()  # Reinicia o menu
     except Exception as e:
         print(f"Ocorreu um erro inesperado: {e}")

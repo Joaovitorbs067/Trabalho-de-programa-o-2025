@@ -1,7 +1,7 @@
 # Arquivo: funcoes.py
-# Aqui fica a lógica (cálculos) do nosso programa.
+# cálculos do nosso programa.
 
-import dados  # Importa nossos dicionários
+import dados  # Importa nosso dicionário
 import math  # Importa a biblioteca de matemática para arredondar
 
 
